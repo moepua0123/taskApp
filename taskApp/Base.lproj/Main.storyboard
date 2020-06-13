@@ -90,16 +90,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="T16-4P-VAw">
-                                <rect key="frame" x="0.0" y="88" width="394" height="673.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="673.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjS-Wv-hVS">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Oy-nr-BD0">
-                                        <rect key="frame" x="0.0" y="45.5" width="394" height="34"/>
+                                        <rect key="frame" x="0.0" y="45.5" width="414" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="LER-gg-hhF"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="SW8-1Y-eli"/>
@@ -110,13 +110,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbz-rB-ABk">
-                                        <rect key="frame" x="0.0" y="104.5" width="394" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="104.5" width="414" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P3R-FP-kzy">
-                                        <rect key="frame" x="0.0" y="150" width="394" height="30"/>
+                                        <rect key="frame" x="0.0" y="150" width="414" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="NOy-D2-ebh"/>
                                             <constraint firstAttribute="width" constant="200" id="yl4-9A-fFg"/>
@@ -125,33 +125,35 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-oZ-e6Q">
-                                        <rect key="frame" x="0.0" y="205" width="394" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="205" width="414" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="B2Y-ek-ynV">
+                                        <rect key="frame" x="0.0" y="250.5" width="414" height="216"/>
+                                    </datePicker>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CQp-dC-deU">
-                                        <rect key="frame" x="0.0" y="250.5" width="394" height="117"/>
+                                        <rect key="frame" x="0.0" y="491.5" width="414" height="182"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="eLn-fs-GY2"/>
+                                        </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="B2Y-ek-ynV">
-                                        <rect key="frame" x="0.0" y="392.5" width="394" height="281"/>
-                                    </datePicker>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="VNf-d7-3AI" firstAttribute="bottom" secondItem="T16-4P-VAw" secondAttribute="bottom" constant="51.5" id="1cC-8K-THa"/>
                             <constraint firstItem="T16-4P-VAw" firstAttribute="leading" secondItem="VNf-d7-3AI" secondAttribute="leading" id="Cyf-5r-wnz"/>
                             <constraint firstItem="VNf-d7-3AI" firstAttribute="trailing" secondItem="T16-4P-VAw" secondAttribute="trailing" id="WQv-WE-7fM"/>
-                            <constraint firstItem="VNf-d7-3AI" firstAttribute="bottom" secondItem="T16-4P-VAw" secondAttribute="bottom" id="ge0-88-WdL"/>
                             <constraint firstItem="T16-4P-VAw" firstAttribute="centerX" secondItem="VNf-d7-3AI" secondAttribute="centerX" id="iW4-Gp-NeN"/>
                             <constraint firstItem="T16-4P-VAw" firstAttribute="top" secondItem="VNf-d7-3AI" secondAttribute="top" id="jYD-bI-Bfb"/>
+                            <constraint firstItem="VNf-d7-3AI" firstAttribute="bottom" secondItem="T16-4P-VAw" secondAttribute="bottom" constant="51.5" id="mVK-hQ-eXE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VNf-d7-3AI"/>
                     </view>
