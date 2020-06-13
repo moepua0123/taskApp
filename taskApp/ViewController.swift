@@ -131,8 +131,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     //×を押された時に、条件なし＝全てのタスクが出るように、TableViewを再構築する
     
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        //×を押した時に、まだ検索条件がついたやつが表示されていたらだるいので、ここでなんの条件もない全部のタスクを表示してあげる
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        //キャンセルを押した時に、まだ検索条件がついたやつが表示されていたらだるいので、ここでなんの条件もない全部のタスクを表示してあげる
         taskArray = realm.objects(Task.self)
         tableView.reloadData()//それで、再構築。
         
