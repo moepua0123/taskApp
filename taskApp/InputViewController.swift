@@ -11,7 +11,7 @@ import RealmSwift
 //タスクを打つ場面
 class InputViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
-    
+   
     @IBOutlet weak var categoryTextField: UITextField!
     
     @IBOutlet weak var contentsTextView: UITextView!
@@ -31,6 +31,7 @@ class InputViewController: UIViewController {
         self.view.addGestureRecognizer(tapGesture)
 
         titleTextField.text = task.title
+        categoryTextField.text = task.category
         contentsTextView.text = task.contents
         datePicker.date = task.date
     }

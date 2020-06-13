@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         SearchBar.enablesReturnKeyAutomatically = false
         
     }
-    //38~69、しっくりきてないから噛み砕いてもらう
+    
     // データの数（＝セルの数）を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskArray.count  // ←修正する

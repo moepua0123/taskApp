@@ -72,7 +72,7 @@
                     <connections>
                         <outlet property="SearchBar" destination="Cwd-lW-gug" id="uvP-C9-um9"/>
                         <outlet property="tableView" destination="38G-Oh-lh9" id="eDG-a4-Lyg"/>
-                        <segue destination="Hcp-a0-C7Y" kind="show" id="WeY-yJ-3Ke"/>
+                        <segue destination="Hcp-a0-C7Y" kind="show" identifier="cellSegue" id="WeY-yJ-3Ke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -155,7 +155,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="sjy-8L-5fE"/>
                     <connections>
-                        <outlet property="category" destination="P3R-FP-kzy" id="2lm-Fm-YlL"/>
+                        <outlet property="categoryTextField" destination="P3R-FP-kzy" id="P6w-yw-6w3"/>
                         <outlet property="contentsTextView" destination="CQp-dC-deU" id="6E6-AL-ZkY"/>
                         <outlet property="datePicker" destination="B2Y-ek-ynV" id="ldY-LD-zCS"/>
                         <outlet property="titleTextField" destination="0Oy-nr-BD0" id="jBm-U0-0dl"/>
