@@ -12,6 +12,7 @@ import RealmSwift
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate {
     
     @IBOutlet weak var SearchBar: UISearchBar!
+    
     var searchResult = [String]()
     
     @IBOutlet weak var tableView: UITableView!
@@ -119,21 +120,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
-    
-    func searchBarSearchButtonClicked(_searchBar: UISearchBar) {
-        
-        //categoryの中からサーチバーに書かれたテキストを検索するよのとき。
-        let predicate = NSPredicate(format:  "category = %@",_searchBar.text!)
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("")
+        //categoryの中からサーチバーに書かれたテキストを検索する
+        let predicate = NSPredicate(format:  "category = %@",SearchBar.text!)
         //taskArray（一覧）に検索結果を代入して、Table Viewを再構築する
-        taskArray = realm.objects(Task.self) .filter(predicate)//ここでpredicateをフィルターにするために、１２６が必要というわけ。
-        //tableViewにデータ表示するよって意味
-        
+        taskArray = realm.objects(Task.self) .filter(predicate)//ここでpredicateをフィルターにするために、１２６が必要。
+        //tableViewにデータ表示する
         tableView.reloadData()
     }
-    //キャンセルボタンを押された時に、条件なし＝全てのタスクが出るように、TableViewを再構築する
+    //×を押された時に、条件なし＝全てのタスクが出るように、TableViewを再構築する
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        //キャンセルした時に、まだ検索条件がついたやつが表示されてたらだるい。なので、ここでなんの条件もない全部のタスクを表示してあげる
+        //×を押した時に、まだ検索条件がついたやつが表示されていたらだるいので、ここでなんの条件もない全部のタスクを表示してあげる
         taskArray = realm.objects(Task.self)
         tableView.reloadData()//それで、再構築。
         
